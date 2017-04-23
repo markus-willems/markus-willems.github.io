@@ -7,9 +7,9 @@ const Navigation = () => {
     <div className="navi">
       <Link className="navi-link" to="/">Home</Link>
       <span className="spacer">&#9679;</span>
-      <Link className="navi-link" to="mailto:markuswillems@gmail.com"><i className="fa fa-envelope-o fa-lg"></i></Link>
+      <a className="navi-link" href="mailto:markuswillems@gmail.com"><i className="fa fa-envelope-o fa-lg"></i></a>
       <span className="spacer">&#9679;</span>
-      <Link className="navi-link" to="https://github.com/markus-willems"><i className="fa fa-github fa-lg"></i></Link>
+      <a className="navi-link" href="https://github.com/markus-willems"><i className="fa fa-github fa-lg"></i></a>
     </div>
   )
 }
