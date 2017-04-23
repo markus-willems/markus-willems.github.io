@@ -1,35 +1,26 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
 
-import style from './assets/css/main.css';
+import { HashRouter as Router, Route } from 'react-router-dom'
 
-class Message extends Component {
-  constructor() {
-    super();
-    this.state = {
-      active: true
-    }
-  }
+// import page components
+import Home from './components/Home'
 
-  handleClick(event) {
-    this.setState(prevState => ({
-      active: !prevState.active
-    }));
-    event.preventDefault;
-  }
+// styles
+import normalize from './assets/css/normalize.css'
+import style from './assets/css/main.css'
 
-  render() {
-    return (
+const App = () => {
+  return (
+    <Router>
       <div>
-        <button onClick={(e) => this.handleClick(e)}>Click me!</button>
-        {this.state.active ? 'active' : 'inactive'}
+        <Route exact path="/" component={Home}/>
       </div>
-    );
-  }
-
+    </Router>
+  )
 }
 
 ReactDOM.render(
-  <Message />,
+  <App />,
   document.getElementById('root')
-);
+)

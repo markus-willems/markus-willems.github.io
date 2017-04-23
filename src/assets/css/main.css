@@ -1,5 +1,120 @@
-@import 'normalize.css';
-
 body {
-  background-color: mediumseagreen;
+  font-family: 'Tinos', serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: #333;
+}
+
+a {
+  color: #333;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+div p:last-child {
+  margin: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.me {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.navi {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 20px 0 10px;
+  border-bottom: 1px solid #eee;
+}
+
+a.navi-link {
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+a.navi-link:hover {
+  border-bottom: 4px solid mediumspringgreen;
+  margin-bottom: -4px;
+}
+
+.me-circle {
+  width: 150px;
+  height: 150px;
+  background-image: url("https://avatars3.githubusercontent.com/u/1749971?v=3&s=460");
+  border-radius: 50%;
+  text-indent: -9999px;
+  background-size: cover;
+  display: block;
+  border: 5px solid mediumspringgreen;
+  margin-bottom: 20px;
+}
+
+.intro {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.content {
+  padding: 1.5rem 0;
+}
+
+.teaser {
+  text-align: center;
+}
+
+.spacer {
+  font-size: .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  border-top: 1px solid #eee;
+  padding-top: 14px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
