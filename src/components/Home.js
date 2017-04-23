@@ -13,7 +13,7 @@ const Home = () => {
       <div className="content">
         <div className="teaser">
         <p>Hello, and welcome to my personal website! I am Markus Willems and I am a web developer based in Bremen, Germany.</p>
-        <p>In the last years I have been working in e-commerce and accquired experience in backend (PHP and MySQL) as well as frontend (HTML, CSS, and JavaScript) development.</p>
+        <p>In the last years I have been working in e-commerce and acquired experience in backend (PHP and MySQL) as well as frontend (HTML, CSS, and JavaScript) development.</p>
         <p>At the moment I am focusing on gaining expertise in creating web applications using React and Redux including accompanied APIs with Node.js/Express.js.</p>
         </div>
       </div>
