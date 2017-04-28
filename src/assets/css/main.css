@@ -17,6 +17,10 @@ a {
   color: #333;
 }
 
+a:hover {
+  color: #555;
+}
+
 p {
   margin: 0 0 1rem;
 }
@@ -89,6 +93,11 @@ a.navi-link:hover {
 
 .content {
   padding: 1.5rem 0;
+}
+
+.content a {
+  border-bottom: 5px solid mediumspringgreen;
+  text-decoration: none;
 }
 
 .teaser {

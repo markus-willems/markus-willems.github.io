@@ -5,6 +5,7 @@ import { HashRouter as Router, Route } from 'react-router-dom'
 
 // import page components
 import Home from './components/Home'
+//import About from './components/About'
 
 // styles
 import normalize from './assets/css/normalize.css'
