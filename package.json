@@ -7,7 +7,7 @@
     "build": "webpack -p",
     "dev": "webpack-dev-server"
   },
-  "pre-commit": ["build"],
+  "pre-commit": [],
   "author": "Markus Willems",
   "license": "MIT",
   "devDependencies": {
