@@ -9,7 +9,7 @@ const Navigation = () => {
       <span className="spacer">&#9679;</span>
       <a className="navi-link" href="mailto:mail@markus-willems.de"><i className="fa fa-envelope-o fa-lg"></i></a>
       <span className="spacer">&#9679;</span>
-      <a className="navi-link" href="https://twitter.com/_mrkswllms"><i className="fa fa-twitter fa-lg"></i></a>
+      <a className="navi-link" href="https://twitter.com/mrkswllms"><i className="fa fa-twitter fa-lg"></i></a>
       <span className="spacer">&#9679;</span>
       <a className="navi-link" href="https://github.com/markus-willems"><i className="fa fa-github fa-lg"></i></a>
     </div>
