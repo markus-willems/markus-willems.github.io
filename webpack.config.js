@@ -8,14 +8,14 @@ const DIST_PATH = path.resolve(__dirname, 'dist')
 const SRC_PATH = path.resolve(__dirname, 'src')
 
 let extractCSS = new ExtractTextPlugin({
-  filename: 'css/style.[contenthash].css',
+  filename: 'css/style.css',
   allChunks: true,
 })
 
 const config = {
   entry: SRC_PATH + '/index.js',
   output: {
-    filename: 'bundle.[hash].js',
+    filename: 'bundle.js',
     path: DIST_PATH,
     publicPath: '/dist/',
   },
