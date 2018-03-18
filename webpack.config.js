@@ -1,16 +1,16 @@
-const path = require('path')
+const path = require('path');
 
 // plugins
-const webpack = require('webpack')
-const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const DIST_PATH = path.resolve(__dirname, 'dist')
-const SRC_PATH = path.resolve(__dirname, 'src')
+const DIST_PATH = path.resolve(__dirname, 'dist');
+const SRC_PATH = path.resolve(__dirname, 'src');
 
 let extractCSS = new ExtractTextPlugin({
   filename: 'css/style.css',
   allChunks: true,
-})
+});
 
 const config = {
   entry: SRC_PATH + '/index.js',
@@ -18,6 +18,10 @@ const config = {
     filename: 'bundle.js',
     path: DIST_PATH,
     publicPath: '/dist/',
+  },
+  devServer: {
+    host: '0.0.0.0',
+    allowedHosts: ['markus-gos'],
   },
   module: {
     rules: [
@@ -44,6 +48,6 @@ const config = {
     new webpack.optimize.UglifyJsPlugin(),
     extractCSS,
   ],
-}
+};
 
-module.exports = config
+module.exports = config;
